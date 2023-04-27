@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="js/script.js"></script>
+    <title>JP Portfolio | Homepage</title>
+  </head>
+  <body>
+    <nav class="d-flex justify-content-between">
+      <a href="/" title="Homepage"
+        ><img src="./img/logo.png" alt="Website Logo"
+      /></a>
+      <a href="/">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="profile">
+      <div class="profile-desc">
+        <h2>Hello, I am</h2>
+        <h1>Joshua Phan</h1>
+        <p>
+          I am a MEng Electrical and Electronics graduate that has recently
+          completed a bootcamp with La Fosse Academy which has provided me with
+          web-development project experience and a technical foundation to build
+          on. On completion of the course, I have developed my technical,
+          collaborative, and problem-solving skills to pursue a career working
+          with data and web development
+        </p>
+      </div>
+      <div>
+        <img
+          class="profile-pic"
+          src="./img/profilepic.png"
+          alt="Profile Picture"
+        />
+      </div>
+    </div>
+
+    <h2 class="subtitle">Featured Projects</h2>
+    <div class="container">
+      <div class="featured-wrapper">
+        <div class="project-list">
+          <div class="project-thumbnails">
+            <img
+              class="project-thumbnail"
+              src="img/fp1.png"
+              alt="Upper Hand Project"
+            />
+            <div class="middle">
+              <div class="project-text">
+                <h3>Upper Hand Poker</h3>
+                <p>A real-time multiplayer game Poker application</p>
+                <a href="/upperhand.html" class="project-link"
+                  >git checkout upper-hand</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-thumbnails">
+            <img
+              class="project-thumbnail"
+              src="img/fp2.png"
+              alt="Ye Olde Quiz Project"
+            />
+            <div class="middle">
+              <div class="project-text">
+                <h3>Ye Olde Quiz</h3>
+                <p>A Pub quiz-styled real-time quiz game</p>
+                <a href="/yoq.html" class="project-link"
+                  >git checkout ye-olde-quiz</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-thumbnails">
+            <img
+              class="project-thumbnail"
+              src="img/fp3.png"
+              alt="Habitual Project"
+            />
+            <div class="middle">
+              <div class="project-text">
+                <h3>Habitual</h3>
+                <p>Habit Tracking Web Application</p>
+                <a href="./habitual.html" class="project-link"
+                  >git checkout habitual</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrows">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="inquiry">
+      <div class="inquiry-second">
+        <div>
+          <h2>Work Inquiry</h2>
+          <p>Let's Connect</p>
+        </div>
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="external-links">
+        <p class="email">
+          <a
+            href="mailto:josh15phan@gmail.com"
+            style="text-decoration: none; font-weight: bold"
+            >josh15phan@gmail.com</a
+          >
+        </p>
+        <a href="https://github.com/JLP2000" class="links-buttons"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/joshua-phan-471615230/"
+          class="links-buttons"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+      <p>
+        <a href="https://github.com/JLP2000/portfolio-webpage">open-source</a>
+        project coded by Joshua Phan
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Dancing+Script&display=swap");
+
+:root {
+  text-align: center;
+  font-family: "Chivo Mono", monospace;
+  /* background-color: rgba(0, 0, 0, 0.849); */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  background-color: aliceblue;
+}
+
+nav a {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:not(:first-child):hover {
+  background-color: aliceblue;
+  text-decoration: underline;
+}
+
+nav a:first-child img {
+  height: 70px;
+  border-radius: 50px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightsteelblue;
+  margin: 40px 100px 40px 100px;
+  padding: 40px;
+  border-radius: 30px;
+  /* width: max-content; */
+}
+
+.profile-desc {
+  background-color: aliceblue;
+  text-align: start;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.profile-desc h2 {
+  text-align: center;
+}
+
+.profile-desc h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+}
+
+.profile-desc p {
+  font-size: 20px;
+}
+
+.profile-pic {
+  height: 300px;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.subtitle {
+  padding: 50px 0 50px 0;
+
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+.container {
+  /* max-width: 450px; */
+  /* padding: 0 20px; */
+  margin: 40px 100px 40px 100px;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightsteelblue;
+  border-radius: 30px;
+}
+
+.featured-wrapper {
+  position: relative;
+  background-color: aliceblue;
+  border-radius: 30px;
+  width: 100%;
+  margin: 40px 40px 40px 40px;
+}
+
+.project-list {
+  display: grid;
+}
+
+.project-thumbnails {
+  grid-column: 1;
+  grid-row: 1;
+  display: none;
+  opacity: 1;
+  /* transition: opacity 0.25s; */
+  position: relative;
+}
+
+.project-thumbnails:hover .project-thumbnail {
+  opacity: 0.3;
+  transition: opacity 0.25s linear;
+}
+
+.project-thumbnails:hover .middle {
+  display: block;
+}
+
+.middle {
+  padding: 0 0 40px 0;
+  transition: 0.5s ease;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-list img {
+  border-radius: 50px;
+  height: 380px;
+  max-width: 80%;
+  padding: 10px;
+  align-items: center;
+}
+
+.arrows {
+  width: 100%;
+}
+
+.prev:hover {
+  background-color: rgba(0, 0, 0, 0.377);
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+}
+
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.377);
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 5rem;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 5rem;
+}
+
+.project-link {
+  text-decoration: none;
+  border-radius: 10px;
+  border: solid lightsteelblue;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px;
+}
+
+.inquiry {
+  padding: 0 0 20px 0;
+  background-color: lightsteelblue;
+  margin: 100px 100px 40px 100px;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.inquiry-second {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+.inquiry-second a {
+  background-color: rgb(243, 243, 243);
+  text-decoration: none;
+  border: solid lightsteelblue;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.inquiry-second a:hover {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+footer {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0 20px 0;
+}
+
+.email {
+  padding: 0 0 20px 0;
+}
+
+.links-buttons {
+  border: solid lightsteelblue;
+  padding: 10px 13px;
+  background-color: aliceblue;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+.links-buttons:hover {
+  background-color: rgba(0, 0, 0, 0.137);
+}
