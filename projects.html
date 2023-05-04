@@ -4,22 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/projects-style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>JP Portfolio | Projects</title>
+    <title>JP Portfolio | Homepage</title>
   </head>
   <body>
     <nav class="d-flex justify-content-between">
       <a href="/" title="Homepage"
         ><img src="./img/logo.png" alt="Website Logo"
       /></a>
-      <a href="/">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <div>
+        <a href="/">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
+
+    <div
+      style="
+        padding: 40px 100px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+      "
+    >
+      <h1>Check out some of my projects!</h1>
+    </div>
+
+    <div class="project">
+      <input type="checkbox" id="expand" />
+      <h2>Upper Hand Poker</h2>
+      <div class="more-details">
+        <h3>Project Description:</h3>
+        <p>
+          Upper Hand Poker is a real-time multiplayer poker game web application
+        </p>
+
+        <div style="padding: 20px">
+          <a href="https://github.com/liambrockpy/upper-hand-server"
+            >Server Repository</a
+          >
+          <a href="https://github.com/liambrockpy/upper-hand-vite-client"
+            >Client Repository</a
+          >
+        </div>
+      </div>
+      <label for="expand">&#9661;</label>
+    </div>
+
+    <div class="inquiry">
+      <div class="inquiry-second">
+        <div>
+          <h2>Work Inquiry</h2>
+          <p>Let's Connect</p>
+        </div>
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="external-links">
+        <p class="email">
+          <a
+            href="mailto:josh15phan@gmail.com"
+            style="text-decoration: none; font-weight: bold"
+            >josh15phan@gmail.com</a
+          >
+        </p>
+        <a href="https://github.com/JLP2000" class="links-buttons"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/joshua-phan-471615230/"
+          class="links-buttons"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+      <p>
+        <a href="https://github.com/JLP2000/portfolio-webpage">open-source</a>
+        project coded by Joshua Phan
+      </p>
+    </footer>
   </body>
 </html>

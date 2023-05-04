@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Dancing+Script&display=swap");
+
+:root {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: "Chivo Mono", monospace; */
+  /* background-color: rgba(0, 0, 0, 0.849); */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 100px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+nav a {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:not(:first-child):hover {
+  background-color: aliceblue;
+  text-decoration: underline;
+}
+
+nav a:first-child img {
+  height: 70px;
+  border-radius: 50px;
+}
+
+.project {
+  background-color: lightsteelblue;
+  margin: 40px 100px;
+  padding: 40px 0 0 0;
+  border-radius: 20px;
+}
+
+#expand {
+  display: none;
+}
+
+#expand:checked > .more-details {
+  display: block;
+}
+
+.more-details {
+  display: none;
+  padding: 50px;
+  background-color: aliceblue;
+  margin: 0 25%;
+}
+
+.more-details h3,
+p {
+  text-align: left;
+}
+
+.more-details a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 14px;
+  background-color: lightgray;
+}
+
+.inquiry {
+  padding: 0 0 20px 0;
+  background-color: lightsteelblue;
+  margin: 100px 100px 40px 100px;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.inquiry-second {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+.inquiry-second a {
+  background-color: rgb(243, 243, 243);
+  text-decoration: none;
+  border: solid lightsteelblue;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.inquiry-second a:hover {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+footer {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0 20px 0;
+}
+
+.email {
+  padding: 0 0 20px 0;
+}
+
+.links-buttons {
+  border: solid lightsteelblue;
+  padding: 10px 13px;
+  background-color: aliceblue;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+.links-buttons:hover {
+  background-color: rgba(0, 0, 0, 0.137);
+}
