@@ -10,8 +10,10 @@
 nav {
   display: flex;
   align-items: center;
-  padding: 0px;
-  background-color: aliceblue;
+  justify-content: space-between;
+  margin: 0px 100px;
+  padding: 10px;
+  /* background-color: aliceblue; */
 }
 
 nav a {
@@ -22,12 +24,66 @@ nav a {
   color: black;
 }
 
-nav a:not(:first-child):hover {
-  background-color: aliceblue;
+nav a:hover {
+  /* background-color: aliceblue; */
   text-decoration: underline;
 }
 
 nav a:first-child img {
   height: 70px;
   border-radius: 50px;
+}
+
+.inquiry {
+  padding: 0 0 20px 0;
+  background-color: lightsteelblue;
+  margin: 100px 100px 40px 100px;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.inquiry-second {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+.inquiry-second a {
+  background-color: rgb(243, 243, 243);
+  text-decoration: none;
+  border: solid lightsteelblue;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.inquiry-second a:hover {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+footer {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0 20px 0;
+}
+
+.email {
+  padding: 0 0 20px 0;
+}
+
+.links-buttons {
+  border: solid lightsteelblue;
+  padding: 10px 13px;
+  background-color: aliceblue;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+.links-buttons:hover {
+  background-color: rgba(0, 0, 0, 0.137);
 }

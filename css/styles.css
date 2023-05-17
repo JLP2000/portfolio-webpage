@@ -13,7 +13,7 @@ nav {
   justify-content: space-between;
   margin: 0px 100px;
   padding: 10px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 
 nav a {
@@ -24,8 +24,8 @@ nav a {
   color: black;
 }
 
-nav a:not(:first-child):hover {
-  background-color: aliceblue;
+nav a:hover {
+  /* background-color: aliceblue; */
   text-decoration: underline;
 }
 

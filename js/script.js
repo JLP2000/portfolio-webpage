@@ -1,6 +1,6 @@
-let slideIndex = 0;
+let slideIndex = 1;
 showSlides(slideIndex);
-showSlidesAuto();
+// showSlidesAuto();
 
 // Next/previous controls
 function plusSlides(n) {
@@ -15,7 +15,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("project-list");
-  console.log(slides[0].children[0].style);
+  // console.log(slides[0].children[0].style);
   // let dots = document.getElementsByClassName("dot");
   if (n > slides[0].children.length) {
     slideIndex = 1;

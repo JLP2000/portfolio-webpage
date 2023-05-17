@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>JP Portfolio | Homepage</title>
+    <title>JP Portfolio | My Projects</title>
   </head>
   <body>
     <nav class="d-flex justify-content-between">
@@ -19,7 +19,7 @@
       <div>
         <a href="/">Home</a>
         <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html" style="font-weight: bold">Projects</a>
         <a href="contact.html">Contact</a>
       </div>
     </nav>
@@ -35,14 +35,45 @@
     </div>
 
     <div class="project">
-      <input type="checkbox" id="expand" />
+      <input type="checkbox" class="expand" id="1" />
       <h2>Upper Hand Poker</h2>
       <div class="more-details">
-        <h3>Project Description:</h3>
-        <p>
-          Upper Hand Poker is a real-time multiplayer poker game web application
-        </p>
+        <div style="columns: 2">
+          <div>
+            <h3>Project Description:</h3>
+            <p>
+              Upper Hand Poker is a group project developed a real-time
+              multiplayer poker game web application
+            </p>
+            <p>
+              But it isn't regular poker... it has a twist: at the beginning of
+              each game, users can click on one other user at the table to view
+              their hand for the rest of that game, providing players with an
+              extra bit of information to WIN BIG and LOSE LITTLE
+            </p>
+            <p>
+              It was built using Vite on the frontend and Python on the backend
+              with a SQL database for user login storage and Redux when dealing
+              with the gamestate on the frontend .
+            </p>
+            <p>
+              This project uses the "flask-socketio" library to provide the
+              functionality that allows users to create/join games and play an
+              online game of poker with friends!
+            </p>
+            <h3>Demo of Upper Hand Poker:</h3>
+            <video src="img/upperhand-demo.mp4" width="100%" controls></video>
+          </div>
+          <div>
+            <img
+              src="img/upper-hand-image.png"
+              alt="upperhand home page"
+              style="height: 100%; border-radius: 20px"
+            />
+          </div>
+        </div>
 
+        <h3 style="text-align: center">Find out more:</h3>
         <div style="padding: 20px">
           <a href="https://github.com/liambrockpy/upper-hand-server"
             >Server Repository</a
@@ -52,7 +83,299 @@
           >
         </div>
       </div>
-      <label for="expand">&#9661;</label>
+      <label for="1" style="font-size: 25px" name="1">&#9661;</label>
+    </div>
+
+    <div class="project">
+      <input type="checkbox" class="expand" id="6" />
+      <h2>URL Shortener</h2>
+      <div class="more-details">
+        <div style="columns: 2">
+          <div>
+            <h3>Project Description:</h3>
+            <p>
+              URL Shortener is a tool that allows users to input a link that
+              they want to shorten to send to others, making it easier to share
+              or save. It also stores the history of a users converted links as
+              well as a QR code that can be sent
+            </p>
+            <p>
+              This was a pair programming project where we were tasked to build
+              a URL shortener web-app using Python, we decided to use the Flask
+              framework where we build the API that accessed our SQL database
+              that stored the links that users have inputted and the shortened
+              version of that link
+            </p>
+            <p>
+              For the testing side, we used pytest to test the different routes
+              of our API and get a good amount of coverage of our code
+            </p>
+          </div>
+          <div>
+            <img
+              src="img/url-shortener-image.png"
+              alt="URL Shortener Homepage"
+              style="width: 90%; border-radius: 20px"
+            />
+          </div>
+        </div>
+
+        <h3 style="text-align: center">Find out more:</h3>
+        <div style="padding: 20px">
+          <a href="https://github.com/JLP2000/url_shortener"
+            >Github Repository</a
+          >
+        </div>
+      </div>
+      <label for="6" style="font-size: 25px" name="6">&#9661;</label>
+    </div>
+
+    <div class="project">
+      <input type="checkbox" class="expand" id="2" />
+      <h2>Ye Olde Quiz</h2>
+      <div class="more-details">
+        <div style="columns: 2">
+          <div>
+            <h3>Project Description:</h3>
+            <p>
+              Ye Olde Quiz was a group project real-time multiplayer pub-quiz
+              themed quiz game
+            </p>
+            <p>
+              During the bootcamp, Ye Olde Quiz was one of our projects when we
+              were tasked with creating and designing a quiz-game web
+              application
+            </p>
+            <p>
+              This project was built using React on the frontend and a Node.js
+              backend with a SQL database for storage of games and user
+              information
+            </p>
+            <p>
+              This is where I first learnt about sockets and dove into how they
+              work and how they are used. The project uses the "socketio"
+              library to provide the functionality that allows users to
+              create/join games and have the experience of a pub-quiz w/ friends
+              at home!
+            </p>
+          </div>
+          <div>
+            <img
+              src="img/yoq-image.png"
+              alt="Ye Olde Quiz Homepage"
+              style="width: 90%; border-radius: 20px"
+            />
+          </div>
+        </div>
+
+        <h3 style="text-align: center">Find out more:</h3>
+        <div style="padding: 20px">
+          <a href="https://github.com/PollyFenne/Ye_olde_quiz_frontend"
+            >Server Repository</a
+          >
+          <a href="https://github.com/shedp/YeOldeQuizBackend"
+            >Client Repository</a
+          >
+        </div>
+      </div>
+      <label for="2" style="font-size: 25px" name="2">&#9661;</label>
+    </div>
+
+    <div class="project">
+      <input type="checkbox" class="expand" id="7" />
+      <h2>Github User Searcher</h2>
+      <div class="more-details">
+        <div style="columns: 2">
+          <div>
+            <h3>Project Description:</h3>
+            <p>
+              The Github User Searcher is a tool that lets users search-up
+              existing Github users and have all their stats displayed to them
+              on a page with graphs and images. Some of the stats include:
+            </p>
+            <ul style="text-align: left">
+              <li>% of languages used</li>
+              <li>top repository</li>
+              <li>stats of each of their repositories</li>
+            </ul>
+            <p>
+              This was a pair programming project to build an web application
+              that allows users to search up the statistics of Github users
+              displayed in a visually-appealing way
+            </p>
+            <p>
+              This project was built using Vite to design the webpage and JS to
+              provide the functionality behind the webpage
+            </p>
+            <p>
+              We decided to explore Vite during this project as we felt we had a
+              good grasp of React and wanted to explore an alternative build
+              tool.
+            </p>
+          </div>
+          <div>
+            <img
+              src="img/github-searcher-image.png"
+              alt="Github Searcher Homepage"
+              style="width: 90%; border-radius: 20px"
+            />
+          </div>
+        </div>
+
+        <h3 style="text-align: center">Find out more:</h3>
+        <div style="padding: 20px">
+          <a href="https://github.com/liambrockpy/github-tracker-app"
+            >Github Repository</a
+          >
+        </div>
+      </div>
+      <label for="7" style="font-size: 25px" name="7">&#9661;</label>
+    </div>
+
+    <div class="project">
+      <input type="checkbox" class="expand" id="3" />
+      <h2>Habitual</h2>
+      <div class="more-details">
+        <div style="columns: 2">
+          <div>
+            <h3>Project Description:</h3>
+            <p>
+              Habitual was a group project that developed a habit-tracker web
+              application for users to track habits and build streaks to help
+              users develop good habits in their daily lives
+            </p>
+            <p>
+              With Habitual, users can create accounts and create personal
+              habits that they can track daily, weekly or monthly. Habitual aims
+              to assist users in developing habits they want to build
+            </p>
+            <p>
+              This project was built using HTML/CSS on the frontend and a
+              Node.js backend with a SQL database for storage of created habits
+              and streaks along with their user information
+            </p>
+            <p>
+              This project mainly focused on building and initialising a SQL
+              database with an application, ElephantSQL was used to host the
+              database that would store user information along with habits and
+              streaks that belong to each user
+            </p>
+          </div>
+          <div>
+            <img
+              src="img/habitual-image.png"
+              alt="Habitual Homepage"
+              style="width: 90%; border-radius: 20px"
+            />
+          </div>
+        </div>
+
+        <h3 style="text-align: center">Find out more:</h3>
+        <div style="padding: 20px">
+          <a href="https://github.com/JLP2000/habitual-server"
+            >Server Repository</a
+          >
+          <a href="https://github.com/JLP2000/habitual-client"
+            >Client Repository</a
+          >
+        </div>
+      </div>
+      <label for="3" style="font-size: 25px" name="3">&#9661;</label>
+    </div>
+
+    <div class="project">
+      <input type="checkbox" class="expand" id="4" />
+      <h2>preVent</h2>
+      <div class="more-details">
+        <div style="columns: 2">
+          <div>
+            <h3>Project Description:</h3>
+            <p>
+              preVent was the first group project I was a part of during the
+              bootcamp
+            </p>
+            <p>
+              preVent is a web-app that allows users to vent their daily
+              frustrations anonymously to help users deal with the stress faced
+              in their daily lives
+            </p>
+            <p>
+              This project was built using HTML and vanilla CSS on the frontend
+              and a Node.js backend using Jest and Supertest for testing on the
+              backend
+            </p>
+            <p>
+              In this group project, my role was mainly backend developer. This
+              is where I was able to utilize the foundations of JS that I had
+              learned, to build the API that preVent would call to and to also
+              build a testing suite to test the different routes of the API!
+            </p>
+          </div>
+          <div>
+            <img
+              src="img/prevent-image.png"
+              alt="preVent Homepage"
+              style="width: 90%; border-radius: 20px"
+            />
+          </div>
+        </div>
+
+        <h3 style="text-align: center">Find out more:</h3>
+        <div style="padding: 20px">
+          <a href="https://github.com/JLP2000/preVent">Github Repository</a>
+          <a
+            href="https://dreamy-jalebi-cb99ed.netlify.app/client/index.html"
+            style="background-color: darkgreen; color: white"
+            >Live</a
+          >
+        </div>
+      </div>
+      <label for="4" style="font-size: 25px" name="4">&#9661;</label>
+    </div>
+
+    <div class="project">
+      <input type="checkbox" class="expand" id="5" />
+      <h2>Premier League Project</h2>
+      <div class="more-details">
+        <div style="columns: 2">
+          <div>
+            <h3>Project Description:</h3>
+            <p>
+              This Premier League Page was the first project I created after
+              learning HTML/CSS
+            </p>
+            <p>
+              This webpage was designed during my first few weeks at the
+              bootcamp, where I was learning the essentials of HTML, CSS and JS
+            </p>
+            <p>
+              It is a simple webpage based on the Premier League where I could
+              play around and explore how to use the different tools HTMl and
+              CSS has to offer!
+            </p>
+          </div>
+          <div>
+            <img
+              src="img/football-page-image.jpg"
+              alt="My Premier League Homepage"
+              style="width: 90%; border-radius: 20px"
+            />
+          </div>
+        </div>
+
+        <h3 style="text-align: center">Find out more:</h3>
+        <div style="padding: 20px">
+          <a href="https://github.com/JLP2000/myveryfirstgit"
+            >Github Repository</a
+          >
+          <a
+            href="https://premier-league-website.netlify.app/teams.html"
+            style="background-color: darkgreen; color: white"
+            >Live</a
+          >
+        </div>
+      </div>
+      <label for="5" style="font-size: 25px" name="5">&#9661;</label>
     </div>
 
     <div class="inquiry">

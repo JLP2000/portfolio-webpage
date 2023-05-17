@@ -3,8 +3,7 @@
 
 :root {
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* font-family: "Chivo Mono", monospace; */
+  font-family: "Chivo Mono", monospace;
   /* background-color: rgba(0, 0, 0, 0.849); */
 }
 
@@ -14,7 +13,7 @@ nav {
   justify-content: space-between;
   margin: 0px 100px;
   padding: 10px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 
 nav a {
@@ -25,8 +24,8 @@ nav a {
   color: black;
 }
 
-nav a:not(:first-child):hover {
-  background-color: aliceblue;
+nav a:hover {
+  /* background-color: aliceblue; */
   text-decoration: underline;
 }
 
@@ -36,25 +35,31 @@ nav a:first-child img {
 }
 
 .project {
-  background-color: lightsteelblue;
+  border: solid black;
   margin: 40px 100px;
   padding: 40px 0 0 0;
   border-radius: 20px;
 }
 
-#expand {
+.expand {
   display: none;
 }
 
-#expand:checked > .more-details {
+.expand:checked ~ .more-details {
   display: block;
+}
+
+.expand:checked ~ label {
+  display: block;
+  transform: rotate(180deg);
 }
 
 .more-details {
   display: none;
-  padding: 50px;
-  background-color: aliceblue;
-  margin: 0 25%;
+  padding: 50px 50px 0 50px;
+  /* background-color: aliceblue; */
+  margin: 20px;
+  border-radius: 20px;
 }
 
 .more-details h3,
@@ -68,6 +73,11 @@ p {
   margin: 10px;
   border-radius: 14px;
   background-color: lightgray;
+  color: black;
+}
+
+.more-details a:hover {
+  text-decoration: underline;
 }
 
 .inquiry {
